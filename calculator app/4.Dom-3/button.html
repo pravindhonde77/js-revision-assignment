@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let btnObj=[
+        {textContent:"Primary",color:"white",bgcolor:"blue"},
+        {textContent:"Secondry",color:"white",bgcolor:"grey"},
+        {textContent:"Danger",color:"white",bgcolor:"orange"},
+        {textContent:"Warning",color:"black",bgcolor:"yellow"},
+        {textContent:"Info",color:"white",bgcolor:"cyan"},
+        {textContent:"Light",color:"black",bgcolor:"white"},
+        {textContent:"Success",color:"white",bgcolor:"green"},
+        {textContent:"Dark",color:"white",bgcolor:"black"},
+        {textContent:"Link",color:"blue",bgcolor:"white"},
+    ]
+
+    btnObj.map(function(ele,index,array){
+        let btn=document.createElement("button")
+        btn.innerText=ele.textContent
+        btn.style.color=ele.color
+        btn.style.backgroundColor=ele.bgcolor
+        document.querySelector("body").append(btn)
+    })
+
+
+</script>
